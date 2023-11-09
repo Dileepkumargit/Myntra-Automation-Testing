@@ -10,7 +10,7 @@ import io.cucumber.java.Before;
 
 public class hooks {
 	
-	WebDriver driver;
+	public static WebDriver driver;
 	
 	@Before
 	public void openBrowser() {
@@ -24,8 +24,8 @@ public class hooks {
 	
 	@After
 	public void closeBrowser() {
-		driver.close();
-		driver.quit();
+//		driver.close();
+//		driver.quit();
 	}
 	
 

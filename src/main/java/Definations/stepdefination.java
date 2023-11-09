@@ -1,13 +1,25 @@
 package Definations;
 
-import io.cucumber.java.en.And;
+import static Definations.hooks.driver;
+
+import POM.addtocartPage;
+import POM.homePage;
+import POM.loginPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 
 public class stepdefination {
 	
+	homePage Homepage = new homePage();
+	loginPage Loginpage = new loginPage();
+	addtocartPage Cartpage = new addtocartPage();
+	
+	
 	@Given("I want to open the Myntra website")
 	public void i_want_to_open_the_myntra_website() {
+		
+		String baseUrl = "https://www.myntra.com/";
+		driver.get(baseUrl);
 		System.out.println("I want to open the Myntra website");
 	   
 	}
