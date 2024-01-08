@@ -10,7 +10,6 @@ import java.util.Random;
 import java.util.ArrayList;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import static Definations.hooks.driver;
 public class homePage {
 
@@ -70,6 +69,7 @@ public class homePage {
 		Thread.sleep(5000);
 		List<WebElement> SelectSize = driver.findElements(By.xpath(obj.getProperty("Size_btn")));
 		System.out.println(SelectSize.size());
+		
 		Random random = new Random();
 		int choseSize = random.nextInt(SelectSize.size());
 		String selectedSize = SelectSize.get(choseSize).getText();
@@ -78,10 +78,6 @@ public class homePage {
 		
 		
 	}
-	public void ClickAddToCartBtn() {
-		
-		driver.findElement(By.xpath(obj.getProperty("AddToCart_btn"))).click();
-		
-	}
+	
 	
 }

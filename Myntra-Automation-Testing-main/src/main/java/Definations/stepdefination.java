@@ -41,12 +41,14 @@ public class stepdefination {
 		Homepage.selectCategory();
 		Homepage.selectTshirt();
 		Homepage.SelectSize();
-		Homepage.ClickAddToCartBtn();
+		
 	}
 
 	@When("click add to cart button")
-	public void click_add_to_cart_button() {
+	public void click_add_to_cart_button() throws InterruptedException {
 		System.out.println("click add to cart button");
+		Cartpage.ClickAddToCartBtn();
+		Cartpage.ViewIteamsInCart();
 	}
 
 }
