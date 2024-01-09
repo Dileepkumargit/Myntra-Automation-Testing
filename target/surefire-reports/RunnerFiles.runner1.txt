@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: RunnerFiles.runner1
+-------------------------------------------------------------------------------
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.066 sec - in RunnerFiles.runner1
