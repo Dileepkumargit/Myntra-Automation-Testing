@@ -2,6 +2,8 @@ package Definations;
 
 import static Definations.hooks.driver;
 
+import java.awt.AWTException;
+
 import POM.addtocartPage;
 import POM.homePage;
 import POM.loginPage;
@@ -45,7 +47,7 @@ public class stepdefination {
 	}
 
 	@When("click add to cart button")
-	public void click_add_to_cart_button() {
+	public void click_add_to_cart_button() throws AWTException, InterruptedException {
 		System.out.println("click add to cart button");
 		Cartpage.viewCartIteams();
 	}
