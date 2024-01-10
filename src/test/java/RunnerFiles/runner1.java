@@ -16,7 +16,4 @@ import io.cucumber.junit.Cucumber;
 
 public class runner1 {
 
-//	features = {"C:\\Users\\dithoopa\\eclipse-workspace\\Cucumber\\src\\test\\java\\Features\\myntra.feature"},
-//			glue = {"Definations"},
-//			monochrome = true
 }
